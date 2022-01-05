@@ -109,9 +109,9 @@
               
                 <h1 id="rna-seq">RNA-Seq</h1>
 <h2 id="go">GO结果</h2>
-<p><img alt="分析结果" src="/img/29.png" title="分析结果" /></p>
+<p><img alt="分析结果" src="../img/29.png" title="分析结果" /></p>
 <h2 id="kegg">KEGG分析结果</h2>
-<p><img alt="分析结果" src="/img/30.png" title="分析结果" /></p>
+<p><img alt="分析结果" src="../img/30.png" title="分析结果" /></p>
 <h2 id="lncrna">筛选差异的lncRNA</h2>
 <pre><code>library(&quot;rtracklayer&quot;)
 library(&quot;dplyr&quot;)
@@ -127,7 +127,7 @@ data = data %&gt;% distinct()
 res1 &lt;- merge(res_df4,data,by=&quot;gene_id&quot;)
 dfgene &lt;-subset(res1, padj &lt; 0.05 &amp; abs(log2FoldChange) &gt; 1)
 </code></pre>
-<p><img alt="分析结果" src="/img/31.png" title="分析结果" /></p>
+<p><img alt="分析结果" src="../img/31.png" title="分析结果" /></p>
               
             </div>
           </div>
